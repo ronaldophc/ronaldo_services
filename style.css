@@ -1,0 +1,39 @@
+.lilita {
+    font-family: Lilita One;
+}
+
+.background-menu {
+    background-color: #242E3C;
+}
+
+.bg-img {
+    object-fit: cover;
+    
+    width: 100%;
+    height: 100vh;
+}
+.navbar-toggler {
+    background-color: #F8F9FA;
+    
+}
+.bg-aqua {
+    background-color: #00FFFB;
+    border: none;
+}
+.text-aqua {
+    color: #00FFFB;
+}
+.text-branco:hover {
+    color: #00FFFB;
+}
+.text-branco {
+    color: #F8F9FA;
+}
+
+.text-shadow {
+    text-shadow: 3px 3px black;
+}
+
+.text-shadow-sm {
+    text-shadow: 2px 2px black;
+}
