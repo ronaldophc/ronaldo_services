@@ -1,86 +1,245 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Font Awesome CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Lilita+One&amp;family=Mitr:wght@700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Lilita+One&amp;family=Mitr:wght@700&amp;display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Ronaldo Services</title>
-</head>
-<body class="bg-dark">
-        <nav class="navbar navbar-expand-sm p-0 background-menu">
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand d-flex align-items-center">
-                    <img src="/logo.png" alt="Logo" class="img-fluid py-0" style="max-width: 90%;">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a href="" class="nav-link lilita fs-3 text-branco text-shadow">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link lilita fs-3 text-branco text-shadow">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link lilita fs-3 text-branco text-shadow">Contato</a>
-                        </li>
-                    </ul>
-                    <div class="d-flex">
-                        <a href="#"> <img src="brazil-flag.png" alt="Portuguese"> </a>
-                        <a href="#"> <img src="usa-flag.png" alt="English"> </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    <div>
-        <source srcset="back_1.png" media="(max-width: 575.98px)">
-        <source srcset="back_1.png" media="(min-width: 576px)">
-        <img src="back_1.png" alt="" class="bg-img">
-        <div class="position-absolute top-50 start-0 ps-5 text-center"> 
-            <h1 class="fs-3 text-white fw-bold lilita lh-1 text-shadow">Desde 2020 realizando services</h1>
-            <p class="fs-1 lilita text-aqua text-shadow">Mais de 100 feitas!</p>
-            <button class="btn btn-primary lilita bg-aqua text-shadow-sm" style="box-shadow: 2px 2px black;">Saiba mais!</button> 
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-sm p-0 bg-menu">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img
+            src="/assets/logo.png"
+            alt="Logo"
+            class="img-fluid py-0"
+            style="max-width: 90%"
+          />
+        </a>
+        <button
+          class="navbar-toggler bg-aqua"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="" class="nav-link lilita fs-3 text-branco text-shadow"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link lilita fs-3 text-branco text-shadow"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link lilita fs-3 text-branco text-shadow"
+                >Contato</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a href="#"> <img src="/assets/brazil-flag.png" alt="Portuguese" /> </a>
+            <a href="#"> <img src="/assets/usa-flag.png" alt="English" /> </a>
+          </div>
         </div>
+      </div>
+    </nav>
+    <!--Inicio-->
+    <div
+      class="position-relative"
+      style="
+        background-image: url(/assets/back_1.png);
+        background-position: center;
+        background-size: cover;
+        height: 90vh;
+      "
+    >
+      <div class="position-absolute top-50 start-0 ps-5 text-center">
+        <h1 class="fs-3 text-white fw-bold lilita lh-1 text-shadow">
+          Desde 2020 realizando services
+        </h1>
+        <p class="fs-1 lilita text-aqua text-shadow">Mais de 100 feitas!</p>
+        <button
+          class="btn btn-primary lilita bg-aqua text-shadow-sm"
+          style="box-shadow: 2px 2px black"
+        >
+          Saiba mais!
+        </button>
+      </div>
     </div>
-    <div class="bg-aqua" style="width: 100%; height: 2vh;"></div>
-    <div style="background-image: url(back_2.png); background-position: center; background-size: cover;">
-        
-        <div class="container text-center bg-img">
-            <div class="fs-1 text-white text-center pb-3 lilita text-shadow">Services</div>
-            <!--<div class="row column-gap-4 mt-5">
-                <button class="col-md col-sm-1 text-white btn btn-lg lilita bg-aqua text-shadow-sm">NAVE</button>
-                <button class="col-md col-sm-1 text-white btn btn-lg lilita bg-aqua text-shadow-sm">ZAPDOS</button>
-                <button class="col-md col-sm-1 text-white btn btn-lg lilita bg-aqua text-shadow-sm">MOLTRES</button>
-                <button class="col-md col-sm-1 text-white btn btn-lg lilita bg-aqua text-shadow-sm">ARTICUNO</button>
-                <button class="col-md col-sm-1 text-white btn btn-lg lilita bg-aqua text-shadow-sm">FINAL</button>
+    <div class="bg-aqua" style="width: 100%; height: 2vh"></div>
+    <!--Services-->
+    <div>
+      <div class="container text-center">
+        <div class="fs-1 text-white text-center pb-3 lilita text-shadow">
+          Services
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card bg-aqua border-0">
+              <div class="card-body">
+                <h2 class="card-title lilita text-white text-shadow">Nave</h2>
+                <p class="card-text lilita text-white text-shadow fs-5">
+                  R$100,00
+                </p>
+              </div>
             </div>
-            <div class="row column-gap-4 mb-5 ">
-                <button class="col-md col-sm-2 text-white btn btn-lg lilita text-shadow-sm">R$100,00</button>
-                <button class="col-md col-sm-2 text-white btn btn-lg lilita text-shadow-sm">R$70,00</button>
-                <button class="col-md col-sm-2 text-white btn btn-lg lilita text-shadow-sm">R$70,00</button>
-                <button class="col-md col-sm-2 text-white btn btn-lg lilita text-shadow-sm">R$80,00</button>
-                <button class="col-md col-sm-2 text-white btn btn-lg lilita text-shadow-sm">R$80,00</button>
+          </div>
+          <div class="col">
+            <div class="card bg-aqua border-0">
+              <div class="card-body">
+                <h2 class="card-title lilita text-white text-shadow">Zapdos</h2>
+                <p class="card-text lilita text-white text-shadow fs-5">
+                  R$70,00
+                </p>
+              </div>
             </div>
-            <div class="d-flex flex-row column-gap-4 mt-5">
-                <button class="col-md text-white btn btn-lg lilita bg-aqua text-shadow-sm me-5 mt-5">COMBO 3 DUNGEONS + FINAL</button>
-                <button class="col-md text-white btn btn-lg lilita bg-aqua text-shadow-sm ms-5 mt-5">COMBO 3 DUNGEONS + FINAL + NAVE</button>
+          </div>
+          <div class="col">
+            <div class="card bg-aqua border-0">
+              <div class="card-body">
+                <h2 class="card-title lilita text-white text-shadow">
+                  Moltres
+                </h2>
+                <p class="card-text lilita text-white text-shadow fs-5">
+                  R$70,00
+                </p>
+              </div>
             </div>
-            <div class="d-flex flex-row column-gap-4">
-                <button class="col-md text-white btn btn-lg lilita text-shadow-sm me-5">R$280,00</button>
-                <button class="col-md text-white btn btn-lg lilita text-shadow-sm ms-5">R$350,00</button>
+          </div>
+          <div class="col">
+            <div class="card bg-aqua border-0">
+              <div class="card-body">
+                <h2 class="card-title lilita text-white text-shadow">
+                  Articuno
+                </h2>
+                <p class="card-text lilita text-white text-shadow fs-5">
+                  R$80,00
+                </p>
+              </div>
             </div>
-        </div> -->
+          </div>
+          <div class="col">
+            <div class="card bg-aqua border-0">
+              <div class="card-body">
+                <h2 class="card-title lilita text-white text-shadow">Final</h2>
+                <p class="card-text lilita text-white text-shadow fs-5">
+                  R$80,00
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-aqua border-0">
+              <div class="card-body">
+                <h2 class="card-title lilita text-white text-shadow">
+                  Combo dungeons + final
+                </h2>
+                <p class="card-text lilita text-white text-shadow fs-5">
+                  R$280,00
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-aqua border-0">
+              <div class="card-body">
+                <h2 class="card-title lilita text-white text-shadow">
+                  Combo dungeons + final + nave
+                </h2>
+                <p class="card-text lilita text-white text-shadow fs-5">
+                  R$350,00
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <!---->
+    <div class="bg-aqua mt-3" style="width: 100%; height: 2vh"></div>
+    <!--Contato-->
+    <div>
+      <div class="fs-1 text-white text-center pb-3 lilita text-shadow">
+        Contato
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card bg-aqua border-0">
+              <div class="card-body">
+                <p class="card-text lilita text-white text-shadow fs-5">
+                  <i class="bi bi-whatsapp"></i> WhatsApp: (42) 98414-7386
+                </p>
+                <p class="card-text lilita text-white text-shadow fs-5">
+                  <i class="bi bi-discord"></i> Discord: Ronaldophc
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---->
+    <div class="bg-aqua mt-3" style="width: 100%; height: 2vh"></div>
+    <!-- Footer -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <img
+                    src="/assets/logo.png"
+                    alt="Logo"
+                    class="img-fluid py-0"
+                    style="max-width: 90%"
+                />
+            </a>
+            <span class="mb-3 mb-md-0 text-white text-shadow">© 2024 Ronaldo Services, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a href="www.github.com/ronaldophc"><i class="bi bi-github text-white p-2"></i></a></li>
+          </ul>
+        </footer>
+      </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+    </html></div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -2,13 +2,12 @@
     font-family: Lilita One;
 }
 
-.background-menu {
+.bg-menu {
     background-color: #242E3C;
 }
 
 .bg-img {
     object-fit: cover;
-    
     width: 100%;
     height: 100vh;
 }
@@ -17,9 +16,10 @@
     
 }
 .bg-aqua {
-    background-color: #00FFFB;
+    background-color: #15e6e2;
     border: none;
 }
+
 .text-aqua {
     color: #00FFFB;
 }
