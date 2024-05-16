@@ -1,14 +1,15 @@
-name: Deploy to cPanel
 on:
   push:
     branches:
       - main
+name: Deploy to cPanel
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.1.0
+      - name: Get Latest Code
+        uses: actions/checkout@v2.1.0
       # Deploy to cPanel
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
