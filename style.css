@@ -1,39 +1,45 @@
 .lilita {
-    font-family: Lilita One;
+  font-family: Lilita One;
 }
 
 .bg-menu {
-    background-color: #242E3C;
+  background-color: #242e3c;
 }
 
 .bg-img {
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
 }
 .navbar-toggler {
-    background-color: #F8F9FA;
-    
+  background-color: #f8f9fa;
 }
 .bg-aqua {
-    background-color: #14c7c4;
-    border: none;
+  background-color: #14c7c4;
+  border: none;
 }
 
 .text-aqua {
-    color: #00FFFB;
+  color: #00fffb;
 }
 .text-branco:hover {
-    color: #00FFFB;
+  color: #00fffb;
 }
 .text-branco {
-    color: #F8F9FA;
+  color: #f8f9fa;
 }
 
 .text-shadow {
-    text-shadow: 3px 3px black;
+  text-shadow: 3px 3px black;
 }
 
 .text-shadow-sm {
-    text-shadow: 2px 2px black;
+  text-shadow: 2px 2px black;
+}
+
+.lang {
+  display: none;
+}
+.lang.active {
+  display: inline;
 }

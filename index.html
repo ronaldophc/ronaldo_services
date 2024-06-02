@@ -23,12 +23,13 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/assets/logo.ico" type="image/x-icon">
     <title>Ronaldo Services</title>
   </head>
   <body class="bg-dark">
     <nav class="navbar navbar-expand-sm p-0 bg-menu">
       <div class="container-fluid">
-        <a href="#" class="navbar-brand d-flex align-items-center">
+        <a href="#initial" class="navbar-brand d-flex align-items-center">
           <img
             src="/assets/logo.png"
             alt="Logo"
@@ -36,45 +37,20 @@
             style="max-width: 90%"
           />
         </a>
-        <button
-          class="navbar-toggler bg-aqua"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a href="" class="nav-link lilita fs-3 text-branco text-shadow"
-                >Início</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link lilita fs-3 text-branco text-shadow"
-                >Services</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link lilita fs-3 text-branco text-shadow"
-                >Contato</a
-              >
-            </li>
-          </ul>
-          <div class="d-flex">
-            <a href="#"> <img src="/assets/brazil-flag.png" alt="Portuguese" /> </a>
-            <a href="#"> <img src="/assets/usa-flag.png" alt="English" /> </a>
-          </div>
+        <div class="d-flex flex-row-reverse">
+          <button class="btn bg-transparent" onclick="setLanguage('pt')">
+            <img src="/assets/brazil-flag.png" alt="Portuguese" />
+          </button>
+          <button class="btn bg-transparent" onclick="setLanguage('en')">
+            <img src="/assets/usa-flag.png" alt="English" />
+          </button>
         </div>
       </div>
     </nav>
     <!--Inicio-->
     <div
-      class="position-relative"
+      id="initial"
+      class="position-relative pt-5"
       style="
         background-image: url(/assets/back_1.png);
         background-position: center;
@@ -84,20 +60,18 @@
     >
       <div class="position-absolute top-50 start-0 ps-5 text-center">
         <h1 class="fs-3 text-white fw-bold lilita lh-1 text-shadow">
-          Desde 2020 realizando services
+          <span class="lang pt active">Desde 2020 realizando services</span>
+          <span class="lang en">Since 2020 providing services</span>
         </h1>
-        <p class="fs-1 lilita text-aqua text-shadow">Mais de 100 feitas!</p>
-        <button
-          class="btn btn-primary lilita bg-aqua text-shadow-sm"
-          style="box-shadow: 2px 2px black"
-        >
-          Saiba mais!
-        </button>
+        <p class="fs-1 lilita text-aqua text-shadow">
+          <span class="lang pt active">Mais de 100 feitas!</span>
+          <span class="lang en">More than 100 made!</span>
+        </p>
       </div>
     </div>
     <div class="bg-aqua" style="width: 100%; height: 2vh"></div>
     <!--Services-->
-    <div>
+    <div id="services">
       <div class="container text-center">
         <div class="fs-1 text-white text-center pb-3 lilita text-shadow">
           Services
@@ -106,7 +80,10 @@
           <div class="col">
             <div class="card bg-aqua border-0">
               <div class="card-body">
-                <h2 class="card-title lilita text-white text-shadow">Nave</h2>
+                <h2 class="card-title lilita text-white text-shadow">
+                  <span class="lang pt active">Nave</span>
+                  <span class="lang en">Ship</span>
+                </h2>
                 <p class="card-text lilita text-white text-shadow fs-5">
                   R$100,00
                 </p>
@@ -173,7 +150,8 @@
             <div class="card bg-aqua border-0">
               <div class="card-body">
                 <h2 class="card-title lilita text-white text-shadow">
-                  Combo dungeons + final + nave
+                  <span class="lang pt active">Combo dungeons + final + nave</span>
+                  <span class="lang en">Combo dungeons + final + ship</span>
                 </h2>
                 <p class="card-text lilita text-white text-shadow fs-5">
                   R$350,00
@@ -187,9 +165,9 @@
     <!---->
     <div class="bg-aqua mt-3" style="width: 100%; height: 2vh"></div>
     <!--Contato-->
-    <div>
+    <div id="contact">
       <div class="fs-1 text-white text-center pb-3 lilita text-shadow">
-        Contato
+        Contact
       </div>
       <div class="container">
         <div class="row justify-content-center">
@@ -212,30 +190,34 @@
     <div class="bg-aqua mt-3" style="width: 100%; height: 2vh"></div>
     <!-- Footer -->
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
-          <div class="col-md-4 d-flex align-items-center">
-            <a href="#" class="navbar-brand d-flex align-items-center">
-                <img
-                    src="/assets/logo.png"
-                    alt="Logo"
-                    class="img-fluid py-0"
-                    style="max-width: 90%"
-                />
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img
+              src="/assets/logo.png"
+              alt="Logo"
+              class="img-fluid py-0"
+              style="max-width: 90%"
+            />
+          </a>
+          <span class="mb-3 mb-md-0 text-white text-shadow">© 2024 Ronaldo Services</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a href="https://www.github.com/ronaldophc" target="_blank">
+              <i class="bi bi-github text-white p-2"></i>
             </a>
-            <span class="mb-3 mb-md-0 text-white text-shadow">© 2024 Ronaldo Services, Inc</span>
-          </div>
-      
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a href="www.github.com/ronaldophc"><i class="bi bi-github text-white p-2"></i></a></li>
-          </ul>
-        </footer>
-      </div>
-    
+          </li>
+        </ul>
+      </footer>
+    </div>
+
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
